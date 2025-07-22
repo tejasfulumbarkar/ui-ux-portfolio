@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejas | UI/UX Designer Portfolio</title>
+    <meta name="description" content="Portfolio of Tejas, a UI/UX designer focused on clean, intuitive interfaces and practical user flows." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init({
+           publicKey: "CXhqM9JKkpe75_DWH",
+         });
+      })();
+   </script>
+    <style>
+      body { font-family: 'Space Grotesk', monospace, sans-serif; }
+    </style>
+  </head>
+  <body class="bg-[#f7f5ef] text-blue-700">
+    <!-- Navigation -->
+    <header class="bg-[#f7f5ef] border-b border-blue-200">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 md:px-8">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <svg width="60" height="72" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+            <path d="M10 100V60C10 30 40 30 40 60V100C40 110 60 110 60 100V60C60 30 90 30 90 60V100" stroke="#0033cc" stroke-width="3" fill="none"/>
+            <path d="M10 60L90 60" stroke="#0033cc" stroke-width="3"/>
+            <path d="M40 30V10H60V30" stroke="#0033cc" stroke-width="3"/>
+          </svg>
+        </div>
+        <ul class="hidden md:flex flex-1 justify-center space-x-8 text-base font-normal tracking-wide uppercase">
+          <li><a href="#hero" class="nav-link">index</a></li>
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
+        <div class="flex items-center space-x-4 ml-4">
+          <a href="https://www.instagram.com/tejasfulumbarkar/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tejas-fulumbarkar-55b250349/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/><path d="M7 10v7" stroke-width="2" stroke-linecap="round"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/><path d="M17 17v-3.5a2 2 0 0 0-4 0V17" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="https://x.com/TFulumbarkar" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 5.92a8.38 8.38 0 0 1-2.36.65A4.13 4.13 0 0 0 21.4 4.1a8.19 8.19 0 0 1-2.6.99A4.1 4.1 0 0 0 12 8.09c0 .32.04.64.1.94A11.65 11.65 0 0 1 3 4.89a4.07 4.07 0 0 0-.55 2.06c0 1.42.72 2.68 1.82 3.42a4.07 4.07 0 0 1-1.86-.51v.05c0 1.98 1.41 3.63 3.28 4a4.1 4.1 0 0 1-1.85.07c.52 1.62 2.03 2.8 3.82 2.83A8.23 8.23 0 0 1 2 19.54a11.62 11.62 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 22 5.92z" stroke-width="2"/></svg>
+          </a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden border-2 border-blue-700 w-8 h-8 flex items-center justify-center rounded-md hover:bg-blue-50 transition" aria-label="Open menu">
+          <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </button>
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8 text-2xl font-bold text-blue-700 uppercase transition-all duration-300 opacity-0 pointer-events-none md:hidden">
+          <button onclick="closeMobileMenu()" aria-label="Close menu" class="absolute top-6 right-6 text-blue-700 hover:text-blue-900 text-4xl font-bold focus:outline-none">
+            &times;
+          </button>
+          <a href="#hero" class="nav-link" onclick="closeMobileMenu()">index</a>
+          <a href="#about" class="nav-link" onclick="closeMobileMenu()">about</a>
+          <a href="#contact" class="nav-link" onclick="closeMobileMenu()">contact</a>
+          <div class="flex space-x-6 mt-4">
+            <a href="https://www.instagram.com/tejasfulumbarkar/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/tejas-fulumbarkar-55b250349/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/><path d="M7 10v7" stroke-width="2" stroke-linecap="round"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/><path d="M17 17v-3.5a2 2 0 0 0-4 0V17" stroke-width="2" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://x.com/TFulumbarkar" target="_blank" rel="noopener noreferrer" class="hover:text-blue-900 transition">
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 5.92a8.38 8.38 0 0 1-2.36.65A4.13 4.13 0 0 0 21.4 4.1a8.19 8.19 0 0 1-2.6.99A4.1 4.1 0 0 0 12 8.09c0 .32.04.64.1.94A11.65 11.65 0 0 1 3 4.89a4.07 4.07 0 0 0-.55 2.06c0 1.42.72 2.68 1.82 3.42a4.07 4.07 0 0 1-1.86-.51v.05c0 1.98 1.41 3.63 3.28 4a4.1 4.1 0 0 1-1.85.07c.52 1.62 2.03 2.8 3.82 2.83A8.23 8.23 0 0 1 2 19.54a11.62 11.62 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 22 5.92z" stroke-width="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col md:flex-row items-center justify-center px-4 md:px-8" style="min-height: 90vh;">
+      <div class="flex-1 flex flex-col items-start md:items-start justify-center text-left">
+        <h1 class="text-4xl md:text-6xl font-normal leading-tight mb-4 text-left w-full">
+          Hi my name is <br />
+          <span class="font-normal md:text-7xl text-5xl block">Tejas</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-4 max-w-2xl">I’m a UI/UX Designer focused on clean, intuitive interfaces and practical user flows.</p>
+        <p class="text-lg mb-6 max-w-xl italic">I help startups and businesses turn complex ideas into user-friendly digital products.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#projects" class="inline-block px-8 py-3 border-2 border-blue-700 text-blue-700 rounded-full text-lg font-medium hover:bg-blue-700 hover:text-white transition">View My Work</a>
+          <a href="https://www.figma.com/@tejasshyamfulum" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 border-2 border-blue-700 text-blue-700 rounded-full text-lg font-medium hover:bg-blue-700 hover:text-white transition">Open Figma Profile</a>
+        </div>
+      </div>
+      <div class="flex-1 flex flex-col items-center mt-8 md:mt-0">
+        <div class="flex flex-col items-center">
+          <div class="w-36 h-36 rounded-full border-2 border-blue-700 flex items-center justify-center mb-2 animate-bounce-slow">
+            <span class="text-lg font-mono text-center leading-tight">case<br>studies</span>
+          </div>
+          <svg width="36" height="36" fill="none" stroke="#0033cc" stroke-width="2" class="animate-bounce" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto py-24 px-6 animate-fade-in-up">
+      <h2 class="text-4xl font-bold mb-8 text-blue-700">About Me</h2>
+      <p class="text-2xl leading-relaxed mb-6">Hey, I’m Tejas — a passionate UI/UX designer and creative thinker who loves building digital experiences that feel smooth, meaningful, and human.
+
+        I enjoy blending user psychology with clean interfaces to solve real problems, whether it’s through intuitive dashboards, serene productivity tools, or accessibility-focused redesigns.
+        
+        From minimal wireframes to polished prototypes, I handle the full design journey — and I’m always curious to learn, test, and improve.
+        
+        Currently open to part-time roles and design challenges, especially where I can bring thoughtful design and playful thinking together.</p>
+      <div class="flex flex-wrap gap-4 text-lg">
+        <span class="px-4 py-2 border border-blue-700 rounded-full">Figma</span>
+        <span class="px-4 py-2 border border-blue-700 rounded-full">Adobe XD</span>
+        <span class="px-4 py-2 border border-blue-700 rounded-full">Canva</span>
+        <span class="px-4 py-2 border border-blue-700 rounded-full">Miro</span>
+        <span class="px-4 py-2 border border-blue-700 rounded-full">HTML/CSS/JS</span>
+        <span class="px-4 py-2 border border-blue-700 rounded-full">Remote Collaboration</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6 animate-fade-in-up">
+      <h2 class="text-3xl font-normal italic mb-8 text-blue-700">case studies</h2>
+      <div class="space-y-8">
+        <!-- Case Study 1 -->
+        <a href="case-quiet-room.html" class="group block border border-blue-700 p-6 md:p-8 transition hover:bg-blue-50 relative overflow-visible">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+              <span class="text-3xl md:text-4xl font-mono mr-4">01</span>
+              <span class="text-2xl md:text-4xl font-extrabold group-hover:underline">Quiet Room</span>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <span class="case-tag">Minimal UI</span>
+              <span class="case-tag">Mindful Design</span>
+              <span class="case-tag">Whitespace</span>
+              <span class="case-tag">Typography</span>
+            </div>
+            <img src="hero_figma.png" alt="Quiet Room Hero" class="hidden md:block absolute right-8 top-1/2 -translate-y-1/2 w-80 h-56 object-cover rounded-xl shadow-lg opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-20 pointer-events-none" />
+          </div>
+        </a>
+        <!-- Case Study 2 -->
+        <a href="case-aaryavart-foundation.html" class="group block border border-blue-700 p-6 md:p-8 transition hover:bg-blue-50 relative overflow-visible">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+              <span class="text-3xl md:text-4xl font-mono mr-4">02</span>
+              <span class="text-2xl md:text-4xl font-extrabold group-hover:underline">Aaryavart Foundation</span>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <span class="case-tag">UX/UI</span>
+              <span class="case-tag">Website Design</span>
+              <span class="case-tag">Interaction Design</span>
+            </div>
+            <img src="arrya_hero_fig.png" alt="Aaryavart Foundation Hero" class="hidden md:block absolute right-8 top-1/2 -translate-y-1/2 w-80 h-56 object-cover rounded-xl shadow-lg opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-20 pointer-events-none" />
+          </div>
+        </a>
+        <!-- Case Study 3 -->
+        <a href="case-gosus.html" class="group block border border-blue-700 p-6 md:p-8 transition hover:bg-blue-50 relative overflow-visible">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+              <span class="text-3xl md:text-4xl font-mono mr-4">03</span>
+              <span class="text-2xl md:text-4xl font-extrabold group-hover:underline">GoSus</span>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <span class="case-tag">Eco-Friendly</span>
+              <span class="case-tag">Sustainability</span>
+              <span class="case-tag">E-commerce</span>
+              <span class="case-tag">UI/UX</span>
+            </div>
+            <img src="gosus_hero.png" alt="GoSus Hero" class="hidden md:block absolute right-8 top-1/2 -translate-y-1/2 w-80 h-56 object-cover rounded-xl shadow-lg opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-20 pointer-events-none" />
+          </div>
+        </a>
+        <!-- Case Study 4 -->
+        <a href="case-star-wars-merch.html" class="group block border border-blue-700 p-6 md:p-8 transition hover:bg-blue-50 relative overflow-visible">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+              <span class="text-3xl md:text-4xl font-mono mr-4">04</span>
+              <span class="text-2xl md:text-4xl font-extrabold group-hover:underline">Star Wars Merch Store</span>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <span class="case-tag">UX/UI</span>
+              <span class="case-tag">UX Research</span>
+              <span class="case-tag">Product Design</span>
+              <span class="case-tag">Branding</span>
+            </div>
+            <img src="sww1.png" alt="Star Wars Merch Store Hero" class="hidden md:block absolute right-8 top-0 -translate-y-1/3 w-60 h-96 object-contain rounded-xl shadow-lg opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-20 pointer-events-none" />
+          </div>
+        </a>
+        
+        
+      </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section id="process" class="max-w-5xl mx-auto py-20 px-6 animate-fade-in-up">
+      <h2 class="text-3xl font-bold mb-12 text-blue-700 text-center">My Design Process</h2>
+      <div class="relative flex flex-col md:flex-row items-center justify-between gap-12 md:gap-0">
+        <!-- SVG Path for the roadmap -->
+        <svg class="absolute left-0 top-10 w-full h-32 md:h-40 pointer-events-none z-0" viewBox="0 0 900 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 100 Q 200 10 450 60 Q 700 110 860 20" stroke="#67e8f9" stroke-width="8" fill="none" />
+        </svg>
+        <!-- Steps -->
+        <div class="relative z-10 flex flex-col md:flex-row w-full justify-between items-center">
+          <div class="flex flex-col items-center w-48 mb-12 md:mb-0">
+            <div class="bg-white border-4 border-blue-400 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-4">
+              <span class="text-2xl font-bold text-blue-700">1</span>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-lg text-blue-700 mb-1">Understand the user’s needs</div>
+              <div class="text-base text-blue-500">Empathize with users and define their goals and pain points.</div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center w-48 mb-12 md:mb-0">
+            <div class="bg-white border-4 border-blue-400 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-4">
+              <span class="text-2xl font-bold text-blue-700">2</span>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-lg text-blue-700 mb-1">Sketch wireframes</div>
+              <div class="text-base text-blue-500">Visualize ideas quickly and iterate on structure and flow.</div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center w-48 mb-12 md:mb-0">
+            <div class="bg-white border-4 border-blue-400 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-4">
+              <span class="text-2xl font-bold text-blue-700">3</span>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-lg text-blue-700 mb-1">Build high-fidelity UI</div>
+              <div class="text-base text-blue-500">Craft polished, interactive designs with real content and visuals.</div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center w-48">
+            <div class="bg-white border-4 border-blue-400 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-4">
+              <span class="text-2xl font-bold text-blue-700">4</span>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-lg text-blue-700 mb-1">Test and refine</div>
+              <div class="text-base text-blue-500">Gather feedback and iterate for the best user experience.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#f7f5ef] py-20 animate-fade-in-up">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-blue-700">Contact</h2>
+        <p class="mb-6 text-xl">Let’s work together — open to freelance, part-time, or full-time design roles.</p>
+        <form id="contact-form" class="space-y-6" autocomplete="off">
+          <div>
+            <label for="name" class="block text-lg font-medium mb-1">Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]" />
+          </div>
+          <div>
+            <label for="email" class="block text-lg font-medium mb-1">Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]" />
+          </div>
+          <div>
+            <label for="message" class="block text-lg font-medium mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 border-2 border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-blue-400 text-sm">
+      &copy; 2024 Tejas. Designed with passion.
+    </footer>
+
+    <!-- Custom Animated Cursor -->
+    <div id="custom-cursor">
+      <div class="pencil-eraser"></div>
+      <div class="pencil-body"></div>
+      <div class="pencil-tip"></div>
+    </div>
+    <canvas id="cursor-trail-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9998;"></canvas>
+    <script>
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('opacity-0')) {
+          mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+          mobileMenu.classList.add('opacity-100');
+        } else {
+          mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+          mobileMenu.classList.remove('opacity-100');
+        }
+      });
+      function closeMobileMenu() {
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        mobileMenu.classList.remove('opacity-100');
+      }
+    </script>
+  </body>
+</html>
