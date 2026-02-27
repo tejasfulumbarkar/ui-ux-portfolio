@@ -82,7 +82,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="flex flex-col md:flex-row items-center justify-center px-4 md:px-8" style="min-height: 90vh;">
+    <section id="hero" class="relative overflow-hidden flex flex-col md:flex-row items-center justify-center px-4 md:px-8" style="min-height: 90vh;">
       <div class="flex-1 flex flex-col items-start md:items-start justify-center text-left">
         <h1 class="text-4xl md:text-6xl font-normal leading-tight mb-4 text-left w-full">
           Hi my name is <br />
@@ -102,13 +102,25 @@
             <svg width="24" height="24" fill="none" stroke="#0033cc" stroke-width="2" class="animate-bounce mt-1" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
           </div>
           <div class="hero-photo-shell">
-            <div class="hero-photo-glow"></div>
             <img src="Litamor screens/tejas_uiux_image-Photoroom.png" alt="Tejas UI/UX portrait" class="hero-photo" />
-            <div class="hero-photo-mask"></div>
             <div class="hero-shine-label">Tejas Fulumbarkar - UI/UX Designer</div>
           </div>
         </div>
       </div>
+      <svg class="hero-water-wave" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true">
+        <g class="hero-water-track hero-water-track-a">
+          <path d="M0,76 C80,28 160,124 240,76 C320,28 400,124 480,76 C560,28 640,124 720,76 C800,28 880,124 960,76 C1040,28 1120,124 1200,76 V180 H0 Z"></path>
+          <path d="M1200,76 C1280,28 1360,124 1440,76 C1520,28 1600,124 1680,76 C1760,28 1840,124 1920,76 C2000,28 2080,124 2160,76 C2240,28 2320,124 2400,76 V180 H1200 Z"></path>
+        </g>
+        <g class="hero-water-track hero-water-track-b">
+          <path d="M0,92 C90,140 170,48 260,92 C350,140 430,48 520,92 C610,140 690,48 780,92 C870,140 950,48 1040,92 C1130,140 1210,48 1200,92 V180 H0 Z"></path>
+          <path d="M1200,92 C1290,140 1370,48 1460,92 C1550,140 1630,48 1720,92 C1810,140 1890,48 1980,92 C2070,140 2150,48 2240,92 C2330,140 2410,48 2400,92 V180 H1200 Z"></path>
+        </g>
+        <g class="hero-water-foam">
+          <path d="M0,83 C100,58 180,108 280,83 C380,58 460,108 560,83 C660,58 740,108 840,83 C940,58 1020,108 1120,83 C1160,74 1185,74 1200,83"></path>
+          <path d="M1200,83 C1300,58 1380,108 1480,83 C1580,58 1660,108 1760,83 C1860,58 1940,108 2040,83 C2140,58 2220,108 2320,83 C2360,74 2385,74 2400,83"></path>
+        </g>
+      </svg>
     </section>
 
     <!-- About Section -->
@@ -284,27 +296,13 @@
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="bg-[#f7f5ef] py-20 animate-fade-in-up">
-      <div class="max-w-2xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-6 text-blue-700">Contact</h2>
-        <p class="mb-6 text-xl">Let’s work together — open to freelance, part-time, or full-time design roles.</p>
-        <form id="contact-form" class="space-y-6" autocomplete="off">
-          <div>
-            <label for="name" class="block text-lg font-medium mb-1">Name</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]" />
-          </div>
-          <div>
-            <label for="email" class="block text-lg font-medium mb-1">Email</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]" />
-          </div>
-          <div>
-            <label for="message" class="block text-lg font-medium mb-1">Message</label>
-            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-[#f7f5ef]"></textarea>
-          </div>
-          <button type="submit" class="w-full py-3 border-2 border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">Send Message</button>
-        </form>
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight text-blue-700">WORK WITH ME</h2>
+        <div class="mt-8 inline-block px-8 py-3 border-2 border-blue-700 rounded-full text-lg md:text-xl font-semibold text-blue-700 bg-white/60">
+          tejasbusiness9@gmail.com
+        </div>
       </div>
     </section>
 
@@ -339,3 +337,6 @@
     </script>
   </body>
 </html>
+
+
+
