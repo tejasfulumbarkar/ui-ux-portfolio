@@ -156,47 +156,23 @@ body {
   left: 0;
   bottom: -1px;
   width: 100%;
-  height: 140px;
+  height: 130px;
   z-index: 3;
   pointer-events: none;
-  filter: drop-shadow(0 -8px 14px rgba(36, 89, 204, 0.22));
 }
 
 .hero-water-track path {
-  stroke: rgba(255, 255, 255, 0.45);
-  stroke-width: 1.2;
-  vector-effect: non-scaling-stroke;
+  fill: #f7f5ef;
 }
 
-.hero-water-track-a path {
-  fill: rgba(53, 128, 255, 0.72);
-}
-
-.hero-water-track-a {
+.hero-water-track {
   animation: heroWaveShift 8s linear infinite;
 }
 
 .hero-water-track-b {
-  opacity: 0.92;
-  animation-name: heroWaveShift, heroWaveBob;
-  animation-duration: 11s, 4.2s;
-  animation-timing-function: linear, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-direction: reverse, alternate;
-}
-
-.hero-water-track-b path {
-  fill: rgba(133, 196, 255, 0.62);
-}
-
-.hero-water-foam path {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.6);
-  stroke-width: 2.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.8;
-  animation: heroWaveShift 9s linear infinite;
+  opacity: 0.88;
+  animation-duration: 11s;
+  animation-direction: reverse;
 }
 
 @keyframes heroWaveShift {
@@ -205,18 +181,6 @@ body {
   }
   to {
     transform: translateX(-1200px);
-  }
-}
-
-@keyframes heroWaveBob {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
@@ -291,7 +255,7 @@ body {
   }
 
   .hero-water-wave {
-    height: 110px;
+    height: 100px;
   }
 
   .hero-shine-label {
