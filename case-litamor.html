@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LitAmor - Case Study | Tejas Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <script defer src="script.js"></script>
+    <style>body { font-family: 'Space Grotesk', monospace, sans-serif; }</style>
+  </head>
+  <body class="bg-[#f7f5ef] text-blue-700">
+    <header class="bg-[#f7f5ef] border-b border-blue-200">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 md:px-8">
+        <div class="flex items-center">
+          <svg width="60" height="72" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+            <path d="M10 100V60C10 30 40 30 40 60V100C40 110 60 110 60 100V60C60 30 90 30 90 60V100" stroke="#0033cc" stroke-width="3" fill="none"/>
+            <path d="M10 60L90 60" stroke="#0033cc" stroke-width="3"/>
+            <path d="M40 30V10H60V30" stroke="#0033cc" stroke-width="3"/>
+          </svg>
+        </div>
+        <ul class="flex-1 flex justify-center space-x-8 text-base font-normal tracking-wide uppercase">
+          <li><a href="index.html#hero" class="nav-link">index</a></li>
+          <li><a href="index.html#about" class="nav-link">about</a></li>
+          <li><a href="index.html#contact" class="nav-link">contact</a></li>
+        </ul>
+        <button class="border-2 border-blue-700 w-8 h-8 flex items-center justify-center rounded-md hover:bg-blue-50 transition">
+          <span class="sr-only">Menu</span>
+          <span class="block w-4 h-4 border-2 border-blue-700"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-16 px-4 md:px-0 animate-fade-in-up">
+      <a href="index.html#projects" class="text-blue-700 underline mb-8 inline-block">Back to all case studies</a>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">LitAmor - Emotion-first Relationship App</h1>
+      <div class="flex flex-wrap gap-4 mb-6">
+        <span class="case-tag">Mobile App</span>
+        <span class="case-tag">Relationship Design</span>
+        <span class="case-tag">Emotional UX</span>
+        <span class="case-tag">UI/UX</span>
+      </div>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Live on Google Play Store</h2>
+        <p class="text-lg mb-4">LitAmor is not just a concept project, it is published live on the Play Store.</p>
+        <div class="w-full bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+          <img src="Litamor screens/litamor_playstore_screen.png" alt="LitAmor live on Play Store" class="w-full h-auto object-contain" />
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Project Overview</h2>
+        <p class="text-lg mb-4">LitAmor is a modern relationship-focused app designed to help people express emotions better through guided messaging, love letters, profile personalization, and healthy communication tools. The goal was to make emotional expression feel simple, intentional, and less awkward in day-to-day conversations.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Problem Statement</h2>
+        <p class="text-lg mb-4">Many users struggle to express affection or difficult feelings in a clear way. Existing chat apps focus on speed and convenience, but not emotional clarity. The challenge was to create a flow that supports thoughtful expression without making the experience heavy or complicated.</p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Goals</h2>
+        <ul class="list-disc list-inside text-lg space-y-1 mb-4">
+          <li>Reduce friction when users want to share feelings.</li>
+          <li>Create a warm and safe visual language.</li>
+          <li>Blend normal chat behavior with guided emotional prompts.</li>
+          <li>Introduce premium value without interrupting trust.</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Target Users</h2>
+        <ul class="list-disc list-inside text-lg space-y-1 mb-4">
+          <li>Young couples looking for better communication habits.</li>
+          <li>Long-distance partners who rely on digital connection.</li>
+          <li>Users who find direct emotional expression difficult.</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Core UX Features</h2>
+        <ol class="list-decimal list-inside text-lg space-y-1 mb-2">
+          <li><b>Onboarding:</b> sets tone and expectations around respectful, emotionally clear communication.</li>
+          <li><b>Guided Love Letters:</b> structured prompts that help users write meaningful messages quickly.</li>
+          <li><b>Messages:</b> familiar chat layout with emotional context in a lightweight way.</li>
+          <li><b>Profiles & Settings:</b> controls for personalization, boundaries, and communication preferences.</li>
+          <li><b>Premium Layer:</b> deeper emotional templates and relationship-growth perks for power users.</li>
+        </ol>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Design Decisions</h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-left border border-blue-200 mb-4">
+            <thead>
+              <tr class="bg-blue-50">
+                <th class="px-4 py-2 border-b border-blue-200">Decision</th>
+                <th class="px-4 py-2 border-b border-blue-200">Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 py-2 border-b border-blue-100">Soft, clean UI palette</td>
+                <td class="px-4 py-2 border-b border-blue-100">Build emotional safety and reduce stress while chatting</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border-b border-blue-100">Prompt-assisted writing flow</td>
+                <td class="px-4 py-2 border-b border-blue-100">Helps users who do not know how to start expressing feelings</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border-b border-blue-100">Simple navigation structure</td>
+                <td class="px-4 py-2 border-b border-blue-100">Keeps focus on communication instead of app complexity</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Premium perks screen</td>
+                <td class="px-4 py-2">Creates clear upgrade value with transparent feature explanation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Usability Focus</h2>
+        <ul class="list-disc list-inside text-lg space-y-1 mb-2">
+          <li>Readable type scale and high contrast for comfort.</li>
+          <li>Low cognitive load in onboarding and writing flows.</li>
+          <li>Consistent component behavior across profile, messages, and settings.</li>
+          <li>Mobile-first spacing and touch-friendly controls.</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-2">Final Design Screens</h2>
+        <div class="space-y-12 w-full max-w-6xl ml-auto">
+          <div>
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Entry & Onboarding</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/login_screen.png" alt="LitAmor Login Screen" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/onboarding_1.png" alt="LitAmor Onboarding 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/onboarding_2.png" alt="LitAmor Onboarding 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/onboarding_3.png" alt="LitAmor Onboarding 3" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/onboarding_4.png" alt="LitAmor Onboarding 4" class="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Messages & Love Letters</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/messages_1.png" alt="LitAmor Messages 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/messages_2.png" alt="LitAmor Messages 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/messages_3.png" alt="LitAmor Messages 3" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_1.png" alt="LitAmor Love Letter 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_2.png" alt="LitAmor Love Letter 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_3.png" alt="LitAmor Love Letter 3" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_4.png" alt="LitAmor Love Letter 4" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_5.png" alt="LitAmor Love Letter 5" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/loveletter_6.png" alt="LitAmor Love Letter 6" class="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Profile & Settings</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/profile_1.png" alt="LitAmor Profile 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/profile_2.png" alt="LitAmor Profile 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/profile_3.png" alt="LitAmor Profile 3" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_1.png" alt="LitAmor Settings 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_2.png" alt="LitAmor Settings 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_3.png" alt="LitAmor Settings 3" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_4.png" alt="LitAmor Settings 4" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_5.png" alt="LitAmor Settings 5" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/settings_6.png" alt="LitAmor Settings 6" class="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Premium Experience</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/premium_1.png" alt="LitAmor Premium 1" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/premium_2.png" alt="LitAmor Premium 2" class="max-w-full max-h-full object-contain" />
+              </div>
+              <div class="w-full h-96 bg-blue-50 border-2 border-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="Litamor screens/premium_perks.png" alt="LitAmor Premium Perks" class="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex justify-center mb-12">
+        <a href="https://www.figma.com/design/hg5QSxGeqH2D2GYZrNS5B3/litamor--Copy-?node-id=0-1&t=6sQXuC99EQw5Y0pR-1" target="_blank" rel="noopener noreferrer"
+           class="inline-block px-8 py-3 bg-blue-700 text-white font-bold rounded-lg shadow hover:bg-blue-800 transition text-lg">
+          View in Figma
+        </a>
+      </div>
+    </main>
+
+    <footer class="text-center py-6 text-blue-400 text-sm">
+      &copy; 2024 Tejas. Designed with passion.
+    </footer>
+
+    <div id="custom-cursor">
+      <div class="pencil-eraser"></div>
+      <div class="pencil-body"></div>
+      <div class="pencil-tip"></div>
+    </div>
+    <canvas id="cursor-trail-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9998;"></canvas>
+  </body>
+</html>
